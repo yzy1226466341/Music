@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="myClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+    <com.yzy.music.music.view.SlidingMenu
+        android:layout_width="wrap_content"
+        music:menuWidth="240dp"
+        android:scrollbars="none"
+        android:id="@+id/slidemenu"
+        android:background="@drawable/bg"
+        xmlns:music="http://schemas.android.com/apk/res/com.yzy.music"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_menu" />
+
+            <RelativeLayout
+                android:background="@drawable/main_logo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Menu"
+                    android:id="@+id/btnMenu"
+                    android:onClick="@{(view) ->myClick.onClick(view)}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.yzy.music.music.view.SlidingMenu>
+</layout>

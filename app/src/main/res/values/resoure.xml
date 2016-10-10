@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SlidingMenu自定义属性集合,Menu与右侧屏幕的间距 -->
+    <declare-styleable name="SlidingMenu">
+        <attr name="menuWidth" format="dimension" />
+        <attr name="direction" >
+            <enum name="right" value="0" />
+            <enum name="left" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

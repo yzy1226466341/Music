@@ -1,0 +1,11 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
+
+    <!-- TODO:去掉ActionBar,使用ToolBar,android 22以上,无标题使用windowNoTitle -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

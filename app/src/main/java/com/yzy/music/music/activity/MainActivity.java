@@ -2,6 +2,7 @@ package com.yzy.music.music.activity;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 
@@ -20,6 +21,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         bing = DataBindingUtil.setContentView(this, R.layout.activity_main);
         bing.setMyClick(this);
+        Log.i("MainActivity" , "");
     }
 
     @Override
